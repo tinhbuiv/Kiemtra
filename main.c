@@ -1,8 +1,9 @@
 #include <stdio.h>
-int nuachuvi(int a, int b, int c){
-    int i = a + b + c;
-    return i / 2;
+
+int nuachuvi(int a, int b, int c) {
+    return (a + b + c) / 2;
 }
+
 int main() {
     int a, b, c;
 
@@ -17,9 +18,8 @@ int main() {
     if (a + b < c || a + c < b || b + c < a) {
         printf("Tong 2 canh cua tam giac luon lon hon 1 canh");
         return 0;
-    }
-    else{
-        printf("Nua chu vi tam giac ABC la %d ",nuachuvi(a,b,c));
+    } else {
+        printf("Nua chu vi tam giac ABC la %d ", nuachuvi(a, b, c));
     }
 
 }
